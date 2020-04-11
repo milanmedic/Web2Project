@@ -17,7 +17,8 @@ export default {
       required: true
     },
     resetMethod: {
-      type: Function
+      type: Function,
+      default: () => {}
     }
   }
 };

@@ -1,5 +1,5 @@
 <template>
-  <BaseForm :neededFields="neededFields" :submitMethod="sendData" :resetMethod="resetFields">
+  <BaseForm :neededFields="neededFields" :submitMethod="registerUser" :resetMethod="resetFields">
     <template v-slot:nameInput>
       <BaseInput type="text" v-model="username" description="Name" />
     </template>
@@ -11,6 +11,12 @@
     </template>
     <template v-slot:confirmPasswordInput>
       <BaseInput type="password" v-model="confirmPassword" description="Confirm Password" />
+    </template>
+    <template v-slot:phoneNumberInput>
+      <BaseInput type="text" v-model="phoneNumber" description="Phone Number" />
+    </template>
+    <template v-slot:locationInput>
+      <BaseInput type="text" v-model="location" description="Location" />
     </template>
     <template v-slot:formButtons>
       <div class="registration-form-buttons">
@@ -32,6 +38,8 @@ export default {
       useremail: "",
       password: "",
       confirmPassword: "",
+      phoneNumber: "",
+      location: "",
       neededFields: [
         {
           id: 1,
@@ -48,6 +56,14 @@ export default {
         {
           id: 4,
           slotName: "confirmPasswordInput"
+        },
+        {
+          id: 5,
+          slotName: "phoneNumberInput"
+        },
+        {
+          id: 6,
+          slotName: "locationInput"
         }
       ]
     };
@@ -60,7 +76,7 @@ export default {
       this.confirmPassword = "";
       this.$emit("reset");
     },
-    sendData() {
+    registerUser() {
       console.log("Hello World");
     }
   },
