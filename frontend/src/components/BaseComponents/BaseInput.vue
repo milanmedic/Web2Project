@@ -1,7 +1,11 @@
 <template>
   <div class="base-input-field">
-    <label :for="transformedId">{{description}}</label>
-    <input type="text" @input="updateValue($event.target.value)" :id="transformedId" />
+    <label :for="transformedId">{{ description }}</label>
+    <input
+      type="text"
+      @input="updateValue($event.target.value)"
+      :id="transformedId"
+    />
   </div>
 </template>
 
@@ -34,5 +38,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
