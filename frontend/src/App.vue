@@ -2,7 +2,8 @@
   <div id="app">
     <!--<RegistrationForm /> -->
     <!-- <LoginForm /> -->
-    <LandingPage />
+    <!--<LandingPage /> -->
+    <BaseProfilePage />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import RegistrationForm from "./components/RegistrationForm";
 import LoginForm from "./components/LoginForm";
 import LandingPage from "./components/LandingPageComponents/LandingPage";
+import BaseProfilePage from "./components/ProfileComponents/SharedComponents/BaseProfilePage";
 export default {
   data() {
     return {};
@@ -17,9 +19,11 @@ export default {
   components: {
     //RegistrationForm: RegistrationForm,
     //LoginForm: LoginForm,
-    LandingPage: LandingPage
+    //LandingPage: LandingPage
+    BaseProfilePage
   }
 };
 </script>
 
-<style></style>
+<style>
+</style>
