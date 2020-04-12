@@ -12,7 +12,7 @@
 
 <script>
 import ServicesSearchForm from "./ServicesSearchForm";
-import ApplicationHeader from "./ApplicationHeader";
+import ApplicationHeader from "../SharedComponents/ApplicationHeader";
 export default {
   data() {
     return {};
