@@ -3,7 +3,9 @@
     <!--<RegistrationForm /> -->
     <!-- <LoginForm /> -->
     <!--<LandingPage /> -->
-    <BaseProfilePage />
+    <!-- <BaseProfilePage /> -->
+    <!-- <FlightServiceProfile /> -->
+    <RegisteredUserProfilePage />
   </div>
 </template>
 
@@ -12,6 +14,8 @@ import RegistrationForm from "./components/RegistrationForm";
 import LoginForm from "./components/LoginForm";
 import LandingPage from "./components/LandingPageComponents/LandingPage";
 import BaseProfilePage from "./components/ProfileComponents/SharedComponents/BaseProfilePage";
+import FlightServiceProfile from "./components/ProfileComponents/FlightServiceProfile";
+import RegisteredUserProfilePage from "./components/ProfileComponents/RegisteredUserProfilePage";
 export default {
   data() {
     return {};
@@ -20,7 +24,9 @@ export default {
     //RegistrationForm: RegistrationForm,
     //LoginForm: LoginForm,
     //LandingPage: LandingPage
-    BaseProfilePage
+    // BaseProfilePage
+    // FlightServiceProfile
+    RegisteredUserProfilePage
   }
 };
 </script>

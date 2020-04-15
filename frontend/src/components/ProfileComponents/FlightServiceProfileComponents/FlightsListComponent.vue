@@ -1,5 +1,5 @@
 <template>
-  <div>Friends List Component</div>
+  <div class="flights-list-component">Flights List Component</div>
 </template>
 
 <script>

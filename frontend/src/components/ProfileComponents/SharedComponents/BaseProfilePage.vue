@@ -9,11 +9,15 @@
 import BaseProfileHeader from "./BaseProfilePageComponents/BaseProfileHeader";
 import BaseProfileMain from "./BaseProfilePageComponents/BaseProfileMain";
 export default {
-  data() {
-    return {
-      tabs: ["Edit Profile", "Friends List"],
-      requiredComponents: ["EditProfileComponent", "FriendListComponent"]
-    };
+  props: {
+    tabs: {
+      type: Array,
+      required: true
+    },
+    requiredComponents: {
+      type: Array,
+      required: true
+    }
   },
   components: {
     BaseProfileHeader,
