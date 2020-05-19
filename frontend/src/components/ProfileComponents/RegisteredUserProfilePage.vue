@@ -21,7 +21,7 @@ export default {
           id: 2,
           componentName: "FriendsListComponent",
           name: "Friends List",
-          path: "./UserProfileComponents/FriendsListComponent"
+          path: "../../UserProfileComponents/FriendsListComponent"
         },
         {
           id: 3,
